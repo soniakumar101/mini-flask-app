@@ -1,0 +1,26 @@
+<html>
+<head>
+    <style>
+    .flipped{
+        -webkit-transform: rotateY(180deg);
+
+    }
+
+    </style>
+</head>
+<body>
+    <img id="bananaman" style="width: 600px" src="http://images.halloweencostumes.com/products/11904/1-1/adult-chiquita-banana-costume.jpg"></img>
+
+
+    <script>
+
+    var bananaman = document.getElementById("bananaman");
+    bananaman.addEventListener("click", function(){
+        setInterval(function(e){
+            bananaman.classList.toggle("flipped");
+        }, 500);
+    });
+
+    </script>
+</body>
+</html>
